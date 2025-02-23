@@ -1,3 +1,14 @@
+def addstring(*s):
+    result =""
+    for i in range (0, len(s)):
+        result = result +"->"+ s[i]
+
+    print(result)
+
+
+addstring("lily", "rose" )
+addstring("rose", "sunflower", "lily")
+addstring("rose")
 
 
 # st1 = 90
@@ -11,7 +22,7 @@
 
 # var-arg(variable arguments)
 # def sumNum(*num):
-# 
+#
 #     print(sum(num))
 
     # print(num)
