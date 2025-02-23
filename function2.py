@@ -1,32 +1,74 @@
+
+
+# st1 = 90
+# st2 = 80
+# st3= 70
+# st = (50, 56, 57)
+# print(st[0])
+# print(st[1])
+# print(st[2])
+# num = (1,2,3,4)
+
+# var-arg(variable arguments)
+# def sumNum(*num):
+# 
+#     print(sum(num))
+
+    # print(num)
+    # print(type(num))
+
+# sumNum(1,2,3)
+# sumNum(1)
+# sumNum(1,4,8,9,3)
+# sumNum()
+
+
+
+
+#implement a function which takes in the number input
+# and gives the output string as "even" or "odd"
+
+# def isEven(num ):
+#     if(num %2==0):
+#         return "even"
+#     else:
+#         return "odd"
+#
+# str = isEven(787)
+# print(str)
+
 # calculator => addition, sub, duv, multi
 
-def calculator(num1=0, num2=0, op="+"):
-    result =0
-    if (op=='+'):
-        result = num1+num2
-    elif (op=="-"):
-        result = num1-num2
-    elif (op == "*"):
-        result = num1*num2
-    elif (op=="/"):
-        result = num1/num2
-    else:
-        result = 0;
 
-    return result;
-
-ch = "y"
-number1 = int(input("enter a number : "))
-number2 = int(input("enter second number : "))
-
-while ch == "y":
-    op= input("enter the input operator : ")
-    finalResult = calculator(number1, number2, op);
-    number1 = number2
-    number2 = finalResult
-
-    print(finalResult)
-    ch = input("Do you want to continue(y/n) : ")
+# def calculator(num1=0, num2=0, op="+"):
+#     result =0
+#     if (op=='+'):
+#         result = num1+num2
+#     elif (op=="-"):
+#         result = num1-num2
+#     elif (op == "*"):
+#         result = num1*num2
+#     elif (op=="/"):
+#         result = num1/num2
+#     else:
+#         result = 0;
+#
+#     return result;
+#
+# # calculator(78, 89, "+")
+#
+# ch = "y"
+# number1 = int(input("enter a number : "))
+# number2 = int(input("enter second number : "))
+#
+# while ch == "y":
+#     op= input("enter the input operator : ")
+#     finalResult = calculator(number1, number2, op);
+#     number1 = number2
+#     number2 = finalResult
+#
+#     print(finalResult)
+#     ch = input("Do you want to continue(y/n) : ")
 
 # fibo => 0 , 1 , 1, 2, 3, 5, 8, 13......
 # 0 1 => + => 1
