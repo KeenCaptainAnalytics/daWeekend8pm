@@ -1,16 +1,40 @@
+# target = 9,
+# call(9, 1, 3, 5, 7, 4, 2)
+# output => 5 and 4
+
+def fn(target, *a):
+    print(target,"target")
+    print(a)
+
+
+fn(9, 1, 3, 5, 7, 4, 2)
+
+# sum ele => 3 5 7
+
+# def sumEle(*a):
+#     sum =0;
+#     for i in range (0, len(a)):
+#         if(a[i]%3==0 and a[i]%5 ==0  and a[i]%7 ==0):
+#             sum = sum+ a[i]
+#         else:
+#             pass
+#     print(a, sum)
+#
+# sumEle(105, 67, 34, 90 ,210)
+
 # sum of even elements
 
-def sumEle(*a):
-    sum = 0
-    for i in range (0, len(a)):
-        if(a[i]%2==0):
-            sum = sum + a[i]
-        else:
-            pass
-
-    print(a, sum)
-
-sumEle(12, 34, 6, 9 , 7, 71);
+# def sumEle(*a):
+#     sum = 0
+#     for i in range (0, len(a)):
+#         if(a[i]%2==0):
+#             sum = sum + a[i]
+#         else:
+#             pass
+#
+#     print(a, sum)
+#
+# sumEle(12, 34, 6, 9 , 7, 71);
 
 # sum of all the values at even indices
 # (14, 45, 67, 78, 89, 21) => elements of tuple
