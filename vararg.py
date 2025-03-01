@@ -6,11 +6,22 @@
 #  0   1    2   3  4   5 => index
 
 
+# def sumEven(*a):
+#     l = len(a)  #=> 9
+#     sum =0
+#     for i in range (0, l, 2):
+#         sum= a[i] +sum  # i =8+2 = 10  , sum =52+8 = 60
+#
+#     print(a , sum)
+#
+
+# approach 2
 def sumEven(*a):
     l = len(a)  #=> 9
     sum =0
-    for i in range (0, l, 2):
-        sum= a[i] +sum  # i =8+2 = 10  , sum =52+8 = 60
+    for i in range (0, l):
+        if(i%2==0):
+            sum= a[i] +sum  # i =8+2 = 10  , sum =52+8 = 60
 
     print(a , sum)
 
