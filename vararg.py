@@ -3,11 +3,27 @@
 # output => 5 and 4
 
 def fn(target, *a):
-    print(target,"target")
-    print(a)
 
+    for i in range (0, len(a)):
+        #  i = 0, 1, 2
+        first = a [i] # 5
+        second = target - first # 4
+      
+        for j in range( i+ 1, len(a)):
+            # j  3. 4
+            if( second == a[j]):
+                print( first , second )
+                return
+            else:
+                pass
 
 fn(9, 1, 3, 5, 7, 4, 2)
+                # 0  1 2   3  4  5
+    # print(target,"target")
+    # print(a)
+
+
+
 
 # sum ele => 3 5 7
 
