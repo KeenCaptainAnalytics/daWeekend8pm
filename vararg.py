@@ -1,5 +1,16 @@
 # sum of even elements
 
+def sumEle(*a):
+    sum = 0
+    for i in range (0, len(a)):
+        if(a[i]%2==0):
+            sum = sum + a[i]
+        else:
+            pass
+
+    print(a, sum)
+
+sumEle(12, 34, 6, 9 , 7, 71);
 
 # sum of all the values at even indices
 # (14, 45, 67, 78, 89, 21) => elements of tuple
@@ -16,17 +27,17 @@
 #
 
 # approach 2
-def sumEven(*a):
-    l = len(a)  #=> 9
-    sum =0
-    for i in range (0, l):
-        if(i%2==0):
-            sum= a[i] +sum  # i =8+2 = 10  , sum =52+8 = 60
-
-    print(a , sum)
-
-
-sumEven(12, 14, 16, 18, 20, 2, 4,6,8)
+# def sumEven(*a):
+#     l = len(a)  #=> 9
+#     sum =0
+#     for i in range (0, l):
+#         if(i%2==0):
+#             sum= a[i] +sum  # i =8+2 = 10  , sum =52+8 = 60
+#
+#     print(a , sum)
+#
+#
+# sumEven(12, 14, 16, 18, 20, 2, 4,6,8)
             # 0   1   2   3   4   5  6 7 8 => index
 
 
