@@ -1,8 +1,14 @@
-num =89786   #=> 8
-num = str(num)
+s = "orangee,red,Orange"
+s = s.lower()
 
-r = num.count("8")
+r = s.count("orange")
 print(r)
+
+# num =89786   #=> 8
+# num = str(num)
+#
+# r = num.count("8")
+# print(r)
 
 # count= 0
 # while num!=0:
