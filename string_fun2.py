@@ -1,7 +1,7 @@
-s="abc8989,343,wqrwc,3453"
+s="abc898df9lgkres,abc8989,343,wqrwc,3453"
 
 list = s.split(",")
-# ['abc8989', '343', 'wqrwc', '3453']
+# ['abc898df9lgkres',abc898, '343', 'wqrwc', '3453']
 print(list)
 # print(list[1])
 sum =0
@@ -14,13 +14,31 @@ for i in range (0,len(list) ): # 0,1, 2,3, 4
         pass;
     elif(r.isalnum()==True):
 
-        for j in range(0, len(r)): # string "abc8989" j = 3
-            if(r[j:j+1].isdigit()==False):
-                pass
+        #     case 2   alpha nummber can appear randomly
+        num = ""
+        for j in range(0, len(r)):
+
+            if (r[j:j + 1].isdigit() == True):
+                # print(num," -- ")
+                num =num + r[j:j + 1]
+
             else:
-                print(r[j:])
-                sum = sum + int(r[j:])
-                break;
+                pass
+
+        print(num)
+        sum = sum +int(num)
+
+
+
+        #     case 1    when alphabets cannot appear after digits
+
+        # for j in range(0, len(r)): # string "abc8989" j = 3
+        #     if(r[j:j+1].isdigit()==False):
+        #         pass
+        #     else:
+        #         print(r[j:])
+        #         sum = sum + int(r[j:])
+        #         break;
 
 print(sum)
 
