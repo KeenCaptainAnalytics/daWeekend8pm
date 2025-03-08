@@ -1,11 +1,37 @@
 s="abc8989,343,wqrwc,3453"
 
-8989+343+3453
+list = s.split(",")
+# ['abc8989', '343', 'wqrwc', '3453']
+print(list)
+# print(list[1])
+sum =0
+for i in range (0,len(list) ): # 0,1, 2,3, 4
+    r= list[i] #'3453'
+    if (r.isdigit()==True):
+        print(r)
+        sum=sum + int(r)
+    elif (r.isalpha()==True):
+        pass;
+    elif(r.isalnum()==True):
 
-print(s.center(20," "))
-l= len(s)
-l= l//2
-print(s[l:l+1])
+        for j in range(0, len(r)): # string "abc8989" j = 3
+            if(r[j:j+1].isdigit()==False):
+                pass
+            else:
+                print(r[j:])
+                sum = sum + int(r[j:])
+                break;
+
+print(sum)
+
+
+
+# 8989+343+3453
+
+# print(s.center(20," "))
+# l= len(s)
+# l= l//2
+# print(s[l:l+1])
 
 # print(s.center(10,"="))
 
